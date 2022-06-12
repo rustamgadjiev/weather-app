@@ -1,0 +1,19 @@
+.search {
+    padding: 10px 15px;
+    border-radius: 0 10px 0 10px;
+    outline: none;
+    border: 0;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 3px 0 rgb(36, 36, 255);
+    transition-duration: .3s;
+
+    &:hover,
+    &:focus {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    &:focus {
+        border-radius: 10px 0 10px 0;
+    }
+}

@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.container{
+    max-width: 1010px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+.app-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .app-wrapper{
+        flex-direction: column;
+        justify-content: center;
+    }
+}

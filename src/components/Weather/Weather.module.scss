@@ -1,0 +1,46 @@
+.date {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.temp {
+    padding: 25px 50px 25px 50px;
+    text-shadow: 3px 3px 0 rgb(27, 27, 27);
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: rgba(197, 197, 197, 0.404);
+    display: inline-block;
+    box-shadow: 2px 2px 0 rgb(27, 27, 27);
+    position: relative;
+
+    h2 {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .weather {
+        font-size: 32px;
+        font-weight: 700;
+
+        img{
+            width: 64px;
+            height: 64px;
+        }
+
+        .description{
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.wrapper {
+    width: 250px;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
