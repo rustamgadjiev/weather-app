@@ -1,11 +1,21 @@
 import s from "./Preloader.module.scss";
-import { ReactComponent as LoadingIcon } from "../../assets/img/icons/loading.svg";
+import { LoadingOutlined } from "@ant-design/icons";
+import { Spin } from "antd";
 
 export const Preloader = ({ isLoading, children }) => {
+  const antIcon = (
+    <LoadingOutlined
+      style={{
+        fontSize: 24,
+      }}
+      spin
+    />
+  );
+
   if (isLoading) {
     return (
       <div className={s.loading}>
-        <LoadingIcon />
+        <Spin indicator={antIcon} />
       </div>
     );
   }
